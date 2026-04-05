@@ -1,0 +1,12 @@
+; Apne shortcuts banana
+Alias je  = jns
+Alias mm  = Mul
+Alias ss  = Sub
+Alias ll  = IMP
+Alias qr  = cls
+
+; Ab use karo
+ll  SCR, 42    ; same as: IMP SCR, 42
+mm  SCR, SCT  ; same as: Mul SCR, SCT
+qr  SCR, 0    ; same as: cls SCR, 0
+je  done      ; same as: jns done
