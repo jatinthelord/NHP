@@ -1,0 +1,12 @@
+; 1D array: 5 numbers [10, 20, 30, 40, 50]
+Pset "arr" _len -o
+myArr = [5]
+  .bytes 10 20 30 40 50
+_begin:
+
+; Pehla element
+IMP SCR, myArr    ; address load
+; SCR ab myArr ka pointer hai
+; [SCR + 0] = 10  (pehla)
+; [SCR + 1] = 20  (doosra)
+; [SCR + 4] = 50  (paanchva)
