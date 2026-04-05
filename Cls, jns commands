@@ -1,0 +1,18 @@
+; cls = cmp  |  jns = jump if not sign (>=0)
+
+Maths * int
+  IMP SCR, 50
+  IMP SCT, 30
+  Sub SCR, SCT    ; SCR = 50 - 30 = 20
+  cls SCR, 0      ; cmp rax, 0
+  jns positive    ; agar >= 0 toh jump
+  jns negative    ; warna yahan
+
+positive:
+  Print msg_pos
+  jns done
+
+negative:
+  Print msg_neg
+
+done:
