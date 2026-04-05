@@ -1,0 +1,11 @@
+Pset "Hello, World!\n" _len -o
+msg = [14]
+  .bytes 72 101 108 108 111 44 32 87 111 114 108 100 33 10
+_begin:
+
+; Phir print karo
+Print msg  
+
+;it's variable Of NHP coding you paste this if a person name mentioned
+CustomerName = 'Mike'
+Print customer_name
