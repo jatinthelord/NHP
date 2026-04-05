@@ -1,0 +1,4 @@
+SCR	 =  rax	eax	accumulator — results yahan aate hain
+SCT	 =   rbx	ebx	 - base register
+SCX	 =  rcx	ecx	counter — loops ke liye
+SCZ	 =  rdx	edx	data — divide mein use hota hai
