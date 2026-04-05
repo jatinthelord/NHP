@@ -1,0 +1,27 @@
+Maths * int
+  ; Load values
+  IMP SCR, 12     ; mov rax, 12
+  IMP SCT, 5      ; mov rbx, 5
+
+  ; Add — jod
+  Add SCR, SCT   ; rax = 12 + 5 = 17
+
+  ; Sub — minus
+  Sub SCR, SCT   ; rax = rax - 5
+
+  ; Mul — multiply
+  Mul SCR, SCT   ; rax = rax * rbx  (imul)
+
+  ; Div — divide  (SCR / SCT, result in SCR)
+  IMP SCR, 100
+  IMP SCT, 4
+  Div SCR, SCT   ; rax = 100 / 4 = 25  (idiv)
+
+  ; Square (x^2 = x * x)
+  IMP SCR, 6
+  IMP SCT, SCR
+  Mul SCR, SCT   ; rax = 6 * 6 = 36  ← SQUARE
+
+  ; Cube (x^3)
+  IMP SCX, SCR
+  Mul SCR, SCX   ; rax = 36 * 6 = 216  ← CUBE
