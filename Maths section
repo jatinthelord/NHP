@@ -1,0 +1,17 @@
+; String ke saath full Maths section
+Pset "Result: \n" _len -o
+resultMsg = [9]
+  .bytes 82 101 115 117 108 116 58 32 10
+
+Maths * int
+  (
+    String = [2, 20]      ; 2 strings, 20 char max
+    $ - Maths
+  _begin:
+    $ [Math
+    IMP SCR, 81
+    IMP SCT, 12
+    Add SCR, SCT   ; 81 + 12 = 93
+    Mul SCR, 2     ; 93 * 2 = 186
+    Print resultMsg
+  )
