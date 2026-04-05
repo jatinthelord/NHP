@@ -1,0 +1,16 @@
+; 2D array: 3 rows × 4 cols = 12 bytes
+Pset "matrix" _len -o
+matrix2D = [3, 4]
+  .bytes 1 2 3 4    ; row 0
+  .bytes 5 6 7 8    ; row 1
+  .bytes 9 10 11 12  ; row 2
+_begin:
+
+; Element [row][col] ka address:
+; offset = row * 4 + col
+; [1][2] = offset 1*4+2 = 6  → value = 7
+Maths * int
+  IMP SCR, 1      ; row = 1
+  IMP SCT, 4      ; cols per row
+  Mul SCR, SCT  ; row * 4 = 4
+  Add SCR, 2     ; + col = 6  ← offset of [1][2]
