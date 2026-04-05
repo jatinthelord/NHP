@@ -1,0 +1,6 @@
+Customers_IMP(function(()
+  Customers_IMP(001 100 010 111 101 011)
+CustomerName = 'John'
+
+ISmale = true
+Age = 19
